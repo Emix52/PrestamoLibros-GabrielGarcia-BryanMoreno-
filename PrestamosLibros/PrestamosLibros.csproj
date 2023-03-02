@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44DB263D-97FC-4AE9-9C72-44112A36A84D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PrestamosLibros</RootNamespace>
+    <AssemblyName>PrestamosLibros</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminCategoriacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCategoriacs.Designer.cs">
+      <DependentUpon>AdminCategoriacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCliente.Designer.cs">
+      <DependentUpon>AdminCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditorial.Designer.cs">
+      <DependentUpon>AdminEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLibro.Designer.cs">
+      <DependentUpon>AdminLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPrestamo.Designer.cs">
+      <DependentUpon>AdminPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCedula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarCedula.Designer.cs">
+      <DependentUpon>BuscarCedula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion.Designer.cs">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCategoria.Designer.cs">
+      <DependentUpon>EditCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCliente.Designer.cs">
+      <DependentUpon>EditCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEditorial.Designer.cs">
+      <DependentUpon>EditEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLibro.Designer.cs">
+      <DependentUpon>EditLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FechaDevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FechaDevo.Designer.cs">
+      <DependentUpon>FechaDevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstudiante.Designer.cs">
+      <DependentUpon>frmEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibro.Designer.cs">
+      <DependentUpon>frmLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminCategoriacs.resx">
+      <DependentUpon>AdminCategoriacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCliente.resx">
+      <DependentUpon>AdminCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEditorial.resx">
+      <DependentUpon>AdminEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLibro.resx">
+      <DependentUpon>AdminLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPrestamo.resx">
+      <DependentUpon>AdminPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCategoria.resx">
+      <DependentUpon>EditCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCliente.resx">
+      <DependentUpon>EditCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEditorial.resx">
+      <DependentUpon>EditEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLibro.resx">
+      <DependentUpon>EditLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FechaDevo.resx">
+      <DependentUpon>FechaDevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstudiante.resx">
+      <DependentUpon>frmEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibro.resx">
+      <DependentUpon>frmLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{0a3402dd-2aed-4b4d-a46d-4318a35d64c4}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{26731bd9-71d7-40c5-8322-22079d142d93}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{f91ce6df-03f6-4452-8b64-8e00fc61cf8a}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
